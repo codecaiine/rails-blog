@@ -52,6 +52,15 @@ run the test with:
  
     rspec spec
 
+
+### Test
+
+- Run ```gem install rspec``` to install Rspec,
+
+- Run ```rspec spec``` to run all the test cases, and
+
+- Run ```rspec spec/name_of_test_file.rb``` to run test cases individually.
+
 ## Authors
 
 👤 **Yannick-Noel AKA**
