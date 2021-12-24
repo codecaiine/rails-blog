@@ -1,47 +1,57 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Blog App
 
-# Blog app
-
-> In this project, I created all controllers and views for my Blog app and added simple placeholders for my views with plain HTML.
-
-## Screenshot
-
-![screenshot](./app/assets/images/image1.png)
-
-## The learning objective of this project are
-
-- Use controllers to handle requests and render empty views.
-- Install Ruby on Rails framework.
-- Use Ruby Gems as a software packages system.
-- Understand Rails naming conventions.
-- Use params from browser requests in a safe way.
-
+The Blog app is a classic example of a blog website. It's a functional website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## Built With
-
 - Ruby
-- Rails
-- Postgresql
+- Ruby on Rails
 - Rubocop
 
 ## Getting Started
+Follow these steps below :
 
-To get a local copy up and running follow these simple example steps.
+
+### Setup
+ ```git clone https://github.com/codecaiine/rails-blog```
+
+ ```cd rails-blog```
 
 ### Prerequisites
 
-- [Ruby on Rails](https://guides.rubyonrails.org/getting_started.html)
+    Ruby Rails PostgresSQL
 
-### Setup
-- ```git clone https://github.com/julie-ify/Blog-app.git```
+Install gems with:
+    
+    bundle install
 
-- ```cd Blog-app```
+Setup database with:
 
-### Running The App
+    rails db:create
+    rails db:migrate
 
-- Run ```bundle install``` to install all the necessary gems
-- Run ```rake db:create:all``` and ```rake db:migrate``` then run ```rails s``` 
-- Go to the browser and type `localhost:3000` to see the app
+Start server with:
+
+    rails server
+
+Open http://localhost:3000/ in your browser.
+Run tests
+
+Install npm with:
+
+    npm i
+
+Install rspec with:
+
+    bundle install
+
+and
+
+    rails generate rspec:install
+
+run the test with:
+ 
+    rspec spec
+
 
 ### Test
 
@@ -51,25 +61,21 @@ To get a local copy up and running follow these simple example steps.
 
 - Run ```rspec spec/name_of_test_file.rb``` to run test cases individually.
 
-## Author
+## Authors
 
-👤 **Juliana Ifionu**
+👤 **Yannick-Noel AKA**
 
-- GitHub: [@julie-ify](https://github.com/julie-ify)
-- LinkedIn: [Juliana Ifionu](https://www.linkedin.com/in/juliana-ifionu-4a9492212/)
-
+- Location: Côte d'Ivoire
+- GitHub: [@codecaiine](https://github.com/codecaiine)
+- Twitter: [@yannicknaka](https://twitter.com/yannicknaka)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/yannick-no%C3%ABl-aka/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/codecaiine/rails-blog/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Microverse for giving us this chance
-- The amazing code reviewers for making us improve every day 👍
