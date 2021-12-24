@@ -2,9 +2,9 @@ require 'rails_helper'
 
 RSpec.describe Post, type: :model do
   describe 'validations' do
-    user = User.create(name: 'Anna', bio: 'Hello! My name is Yannick.', posts_counter: 0)
+    user = User.create(name: 'Anna', bio: 'Hello! My name is Juliana.', posts_counter: 0)
     subject do
-      Post.new(title: 'This is first post', text: 'Hello! My name is Yannick.', author: user, comments_counter: 2,
+      Post.new(title: 'This is first post', text: 'Hello! My name is Juliana.', author: user, comments_counter: 2,
                likes_counter: 2)
     end
 
