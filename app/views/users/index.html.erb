@@ -1,8 +1,0 @@
-<div>
-  <% @users.each do |user| %>
-    <%= link_to user_path(user.id) do %>
-      <%= render partial: "user_profile", locals: {user: user} %>
-    <% end %>
-  <% end %>
-</div>
-
