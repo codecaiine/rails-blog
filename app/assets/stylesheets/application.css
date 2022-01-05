@@ -68,8 +68,3 @@ input::placeholder,
 textarea::placeholder {
   font-style: italic;
 }
-
-img {
-  width: 145px;
-  height: 145px;
-}
