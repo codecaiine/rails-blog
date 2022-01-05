@@ -1,24 +1,81 @@
-# README
+# Blog App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The Blog app is a classic example of a blog website. It's a functional website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.
 
-Things you may want to cover:
+## Built With
+- Ruby
+- Ruby on Rails
+- Rubocop
 
-* Ruby version
+## Getting Started
+Follow these steps below :
 
-* System dependencies
 
-* Configuration
+### Setup
+ ```git clone https://github.com/codecaiine/rails-blog```
 
-* Database creation
+ ```cd rails-blog```
 
-* Database initialization
+### Prerequisites
 
-* How to run the test suite
+    Ruby Rails PostgresSQL
 
-* Services (job queues, cache servers, search engines, etc.)
+Install gems with:
+    
+    bundle install
 
-* Deployment instructions
+Setup database with:
 
-* ...
+    rails db:create
+    rails db:migrate
+
+Start server with:
+
+    rails server
+
+Open http://localhost:3000/ in your browser.
+Run tests
+
+Install npm with:
+
+    npm i
+
+Install rspec with:
+
+    bundle install
+
+and
+
+    rails generate rspec:install
+
+run the test with:
+ 
+    rspec spec
+
+
+### Test
+
+- Run ```gem install rspec``` to install Rspec,
+
+- Run ```rspec spec``` to run all the test cases, and
+
+- Run ```rspec spec/name_of_test_file.rb``` to run test cases individually.
+
+## Authors
+
+👤 **Yannick-Noel AKA**
+
+- Location: Côte d'Ivoire
+- GitHub: [@codecaiine](https://github.com/codecaiine)
+- Twitter: [@yannicknaka](https://twitter.com/yannicknaka)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/yannick-no%C3%ABl-aka/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/codecaiine/rails-blog/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
