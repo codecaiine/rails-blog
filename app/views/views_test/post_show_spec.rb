@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.feature 'User Index', type: :feature do
   background { visit new_user_session_path }
   scenario "I can see the comment each commentor left." do
-    @user1 = User.create(name: 'Titus', email: 'titus@gmail.com', password: 'qwerty', confirmed_at: Time.now, photo: "http://www.pselaw.com/wp-content/uploads/2016/08/pokemon-150x150.jpg", bio: "I'm a good person")
-    @user2 = User.create(name: 'Julie', email: 'julie@gmail.com', password: 'qwerty', confirmed_at: Time.now, photo: "http://www.pselaw.com/wp-content/uploads/2016/08/pokemon-150x150.jpg", bio: "Software engineer")
+    @user1 = User.create(name: 'Yannick', email: 'akabouyannickn@gmail.com', password: 'azerty', confirmed_at: Time.now, photo: "http://www.pselaw.com/wp-content/uploads/2016/08/pokemon-150x150.jpg", bio: "I'm a good person")
+    @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'azerty', confirmed_at: Time.now, photo: "http://www.pselaw.com/wp-content/uploads/2016/08/pokemon-150x150.jpg", bio: "Software engineer")
 
     @post = Post.create(title: "hello there", text: "Etiam et mauris et", author_id: @user2.id)
     @coment1 = Comment.create(text: " consectetur adipiscing e mollislibero non urna", author_id: @user2.id, post_id: @post.id)
