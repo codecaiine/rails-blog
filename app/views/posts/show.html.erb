@@ -7,17 +7,15 @@
       <div class="d-flex justify-content-between my-3">
         <h4><%= @post.title %> by <%= @user.name %></h4>
         <p>Comments : <%= @post.comments.size%> Likes : <%= @post.likes.size %> </p>
-        </div>
-        <p><%= @post.text %> </p>
-        <% if can? :destroy, @post %>
-        <%= link_to user_post_path(@user.id, @post.id), method: :delete do %>
-        <span class="m-3 badge bg-danger"><span> <i class="fas fa-trash-alt"></i> </span>Delete</span>
-        <% end %>
-      <% end %>
+        
       </div>
-      <%= render "layouts/coomcard" %>
-      <%= render "layouts/likedestroy" %>
-      <%= render "comments/comment_form" %>
+      <p><%= @post.text %> </p>
+      <% if can? :destroy, @post %>
+      <%= link_to "Delete", user_post_path(@user.id, @post.id), method: :delete, data: {disable_with: "Deleting..."}, class: "btn btn-danger mb-3"%>
+      <% end %>
+    </div>
+    
+    <%= render "layouts/coomcard" %>
+    <%= render "comments/comment_form" %>
   </div>
-  
 </div>
