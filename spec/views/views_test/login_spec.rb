@@ -16,8 +16,8 @@ RSpec.feature 'Logins', type: :feature do
 
     scenario 'Submit form with incorrect email and password' do
       within 'form' do
-        fill_in 'Email', with: 'hi@gmail.com'
-        fill_in 'Password', with: '444444'
+        fill_in 'Email', with: 'hello@gmail.com'
+        fill_in 'Password', with: '222222'
       end
       click_button 'Log in'
       expect(page).to have_content 'Invalid Email or password.'
