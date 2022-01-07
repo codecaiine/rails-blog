@@ -3,21 +3,21 @@ require 'rails_helper'
 RSpec.feature 'Logins', type: :feature do
   background { visit new_user_session_path }
   scenario 'Page should have username of other users' do
-    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'azerty', confirmed_at: Time.now)
-    @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'azerty', confirmed_at: Time.now)
-    @user3 = User.create(name: 'Kossi', email: 'kossi@gmail.com', password: 'azerty', confirmed_at: Time.now)
+    @user1 = User.create(name: 'yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now)
+    @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'qwerty', confirmed_at: Time.now)
+    @user3 = User.create(name: 'Kossi', email: 'kossi@gmail.com', password: 'qwerty', confirmed_at: Time.now)
     within 'form' do
       fill_in 'Email', with: @user1.email
       fill_in 'Password', with: @user1.password
     end
     click_button 'Log in'
-    expect(page).to have_content 'Yannick'
+    expect(page).to have_content 'yannick'
     expect(page).to have_content 'Paka'
     expect(page).to have_content 'Kossi'
   end
 
   scenario 'Page should have profile photo for each user' do
-    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user1 = User.create(name: 'yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image')
     within 'form' do
       fill_in 'Email', with: @user1.email
@@ -30,8 +30,8 @@ RSpec.feature 'Logins', type: :feature do
   end
 
   scenario 'Should see number of post for each user' do
-    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'azerty', confirmed_at: Time.now)
-    @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'azerty', confirmed_at: Time.now)
+    @user1 = User.create(name: 'yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now)
+    @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'qwerty', confirmed_at: Time.now)
 
     Post.create(title: 'Lorem ipsum dolor sit amet', text: 'Etiam et mauris et ligula', author_id: @user2.id)
     within 'form' do
@@ -44,8 +44,8 @@ RSpec.feature 'Logins', type: :feature do
   end
 
   scenario "When click on user Should redirected to that user's show page" do
-    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'azerty', confirmed_at: Time.now)
-    @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'azerty', confirmed_at: Time.now)
+    @user1 = User.create(name: 'yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now)
+    @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'qwerty', confirmed_at: Time.now)
 
     Post.create(title: 'Lorem ipsum dolor sit amet', text: 'Etiam et mauris et ligula', author_id: @user2.id)
     within 'form' do

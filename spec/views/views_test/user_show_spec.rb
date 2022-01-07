@@ -38,7 +38,7 @@ RSpec.feature 'Logins', type: :feature do
   end
 
   scenario "When click on user Should redirected to that user's show page" do
-    @user1 = User.create(name: 'Yannick', email: 'Yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
+    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image')
     @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image')
@@ -54,7 +54,7 @@ RSpec.feature 'Logins', type: :feature do
   end
 
   scenario "can see the user's bio." do
-    @user1 = User.create(name: 'Yannick', email: 'Yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
+    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: "I'm a good person")
     @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: 'Software engineer')
@@ -70,7 +70,7 @@ RSpec.feature 'Logins', type: :feature do
   end
 
   scenario "can see the user's first 3 posts." do
-    @user1 = User.create(name: 'Yannick', email: 'Yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
+    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: "I'm a good person")
     @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: 'Software engineer')
@@ -89,7 +89,7 @@ RSpec.feature 'Logins', type: :feature do
   end
 
   scenario "can see a button that lets me view all of a user's posts." do
-    @user1 = User.create(name: 'Yannick', email: 'Yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
+    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: "I'm a good person")
     @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: 'Software engineer')
@@ -105,7 +105,7 @@ RSpec.feature 'Logins', type: :feature do
   end
 
   scenario "can see a button that lets me view all of a user's posts." do
-    @user1 = User.create(name: 'Yannick', email: 'Yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
+    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: "I'm a good person")
     @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: 'Software engineer')
@@ -122,7 +122,7 @@ RSpec.feature 'Logins', type: :feature do
   end
 
   scenario "can see a button that lets me view all of a user's posts." do
-    @user1 = User.create(name: 'Yannick', email: 'Yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
+    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: "I'm a good person")
     @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: 'Software engineer')

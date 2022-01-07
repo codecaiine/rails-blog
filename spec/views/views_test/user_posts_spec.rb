@@ -3,9 +3,9 @@ require 'rails_helper'
 RSpec.feature 'User Index', type: :feature do
   background { visit new_user_session_path }
   scenario "I can see the user's profile picture." do
-    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: "I'm a good person")
-    @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user2 = User.create(name: 'Paka', email: 'p', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: 'Software engineer')
 
     Post.create(title: 'hello there', text: 'Etiam et mauris et', author_id: @user2.id)
@@ -22,9 +22,9 @@ RSpec.feature 'User Index', type: :feature do
   end
 
   scenario "I can see the user's username." do
-    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: "I'm a good person")
-    @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user2 = User.create(name: 'Paka', email: 'p', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: 'Software engineer')
 
     Post.create(title: 'hello there', text: 'Etiam et mauris et', author_id: @user2.id)
@@ -40,9 +40,9 @@ RSpec.feature 'User Index', type: :feature do
   end
 
   scenario 'I can see the number of posts the user has written' do
-    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: "I'm a good person")
-    @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user2 = User.create(name: 'Paka', email: 'p', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: 'Software engineer')
 
     Post.create(title: 'hello there', text: 'Etiam et mauris et', author_id: @user2.id)
@@ -58,9 +58,9 @@ RSpec.feature 'User Index', type: :feature do
   end
 
   scenario " can see a post's title." do
-    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: "I'm a good person")
-    @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user2 = User.create(name: 'Paka', email: 'p', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: 'Software engineer')
 
     Post.create(title: 'hello there', text: 'Etiam et mauris et', author_id: @user2.id)
@@ -76,9 +76,9 @@ RSpec.feature 'User Index', type: :feature do
   end
 
   scenario " can see some of the post's body." do
-    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: "I'm a good person")
-    @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user2 = User.create(name: 'Paka', email: 'p', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: 'Software engineer')
 
     Post.create(title: 'hello there', text: 'Etiam et mauris et', author_id: @user2.id)
@@ -94,9 +94,9 @@ RSpec.feature 'User Index', type: :feature do
   end
 
   scenario 'can see the first comments on a post.' do
-    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: "I'm a good person")
-    @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user2 = User.create(name: 'Paka', email: 'p', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: 'Software engineer')
 
     @post = Post.create(title: 'hello there', text: 'Etiam et mauris et', author_id: @user2.id)
@@ -113,9 +113,9 @@ RSpec.feature 'User Index', type: :feature do
   end
 
   scenario 'I can see how many comments a post has.' do
-    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: "I'm a good person")
-    @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user2 = User.create(name: 'Paka', email: 'p', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: 'Software engineer')
 
     @post = Post.create(title: 'hello there', text: 'Etiam et mauris et', author_id: @user2.id)
@@ -135,9 +135,9 @@ RSpec.feature 'User Index', type: :feature do
   end
 
   scenario ' can see how many likes a post has.' do
-    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: "I'm a good person")
-    @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: 'Software engineer')
 
     @post = Post.create(title: 'hello there', text: 'Etiam et mauris et', author_id: @user2.id)
@@ -154,9 +154,9 @@ RSpec.feature 'User Index', type: :feature do
   end
 
   scenario 'I can see a section for pagination if there are more posts than fit on the view.' do
-    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: "I'm a good person")
-    @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user2 = User.create(name: 'Julie', email: 'julie@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: 'Software engineer')
 
     @post = Post.create(title: 'hello there', text: 'Etiam et mauris et', author_id: @user2.id)
@@ -178,9 +178,9 @@ RSpec.feature 'User Index', type: :feature do
   end
 
   scenario "When I click on a post, it redirects me to that post's show page." do
-    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user1 = User.create(name: 'Yannick', email: 'yannick@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: "I'm a good person")
-    @user2 = User.create(name: 'Paka', email: 'paka@gmail.com', password: 'azerty', confirmed_at: Time.now,
+    @user2 = User.create(name: 'Julie', email: 'julie@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image', bio: 'Software engineer')
 
     @post = Post.create(title: 'hello there', text: 'Etiam et mauris et', author_id: @user2.id)

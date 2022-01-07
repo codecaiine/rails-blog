@@ -24,8 +24,7 @@ RSpec.feature 'Logins', type: :feature do
     end
 
     scenario 'Submit form with correct email and password' do
-      @user = User.create(name: 'Yannick', email: 'akabrouyannickn@gmail.com', password: 'qwerty',
-                          confirmed_at: Time.now)
+      @user = User.create(name: 'Titus', email: 'titus@gmail.com', password: 'qwerty', confirmed_at: Time.now)
       within 'form' do
         fill_in 'Email', with: @user.email
         fill_in 'Password', with: @user.password
